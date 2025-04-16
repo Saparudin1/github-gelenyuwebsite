@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Materi Lainya</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Tinggi penuh layar */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('Assets/logo\ gelenyu\ oke.jpg'); /* Ganti dengan nama file foto Anda */
+            background-size: cover; /* Gambar memenuhi layar */
+            background-position: center; /* Posisikan gambar di tengah */
+            position: relative; /* Untuk overlay */
+            overflow: hidden; /* Menghindari scrolling */
+        }
+        /* Overlay untuk efek blur ringan */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2); /* Transparansi hanya 20% */
+            backdrop-filter: blur(3px); /* Efek blur sangat ringan */
+            z-index: -1; /* Tempatkan overlay di belakang konten */
+        }
+        h1 {
+            color: #006666; /* Warna hijau kebiruan */
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column; /* Susun tombol ke bawah */
+            gap: 15px; /* Jarak antar tombol */
+            align-items: center; /* Pusatkan elemen */
+        }
+        .link-button {
+            text-decoration: none; /* Hapus garis bawah */
+            color: white; /* Warna teks */
+            background-color: #008080; /* Hijau kebiruan */
+            padding: 15px 20px; /* Ukuran tombol */
+            font-size: 18px; /* Ukuran teks */
+            font-weight: bold; /* Teks tebal */
+            border-radius: 8px; /* Membuat sudut tombol melengkung */
+            display: inline-flex; /* Flexbox untuk logo dan teks */
+            align-items: center; /* Pusatkan logo dan teks secara vertikal */
+            justify-content: center; /* Teks berada di tengah tombol */
+            cursor: pointer; /* Menampilkan kursor tangan */
+            border: 2px solid #006666; /* Warna garis pinggir */
+            width: 250px; /* Lebar tombol */
+        }
+        .link-button:hover {
+            background-color: #006666; /* Hijau lebih gelap saat hover */
+        }
+        img {
+            width: 25px; /* Ukuran logo */
+            height: 25px; /* Tinggi logo */
+            margin-right: 10px; /* Jarak antara logo dan teks */
+        }
+        .back-button {
+            margin-top: 20px; /* Jarak tombol ke atas */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            background-color: #004d00; /* Hijau tua */
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background-color: #003a00; /* Hijau lebih gelap saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tautan Media Sosial</h1>
+    
+    <div class="buttons">
+        <!-- Tautan WhatsApp -->
+        <a class="link-button" href="https://whatsapp.com/channel/0029VbAINkB4o7qR5AREPG01" target="_blank">
+            <img src="Assets/Whassap.jpg" alt="Logo WhatsApp"> Saluran Whatsapp Nyu</a>
+  <!-- Tautan Google Drive -->
+        <a class="link-button" href="http://wa.me//+6285860865032" target="_blank">
+            <img src="Assets/Whassap.jpg" alt="Logo Google Drive">Admin Nyu</a>
+        <a class="link-button" href="https://www.instagram.com/gel_enyu?igsh=MWx2eWFodTV1b3g2ZA==" target="_blank">
+            <img src="Assets/Instagram.jpg" alt="Logo WhatsApp">Instagram Nyu</a>
+        <a class="link-button" href="https://www.instagram.com/suarauntukkesetaraan?igsh=MTB0dWNxNXBlNmo0Yg==" target="_blank">
+             <img src="Assets/Instagram.jpg" alt="Logo WhatsApp">Intagram Suara Untuk Kesetaraan Kolaborasi Bersama Disabilitas</a>
+        <a class="link-button" href="https://www.instagram.com/fikri_pahad?igsh=MXVyc3h3ZTZxcHhyaA==" target="_blank">
+             <img src="Assets/Instagram.jpg" alt="Logo WhatsApp">Curhat Bersama Admin Nyu</a>
+        <a class="link-button" href="https://wa.me/yourphonenumber" target="_blank">
+            <img src="Assets/G.drive.jpg" alt="Logo WhatsApp">Materi lainya Nyu</a>
+    </div>
+    <!-- Tombol Kembali -->
+    <button class="back-button" onclick="history.back()">Kembali</button>
+</body>
+</html>
